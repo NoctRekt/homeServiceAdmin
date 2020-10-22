@@ -1,14 +1,16 @@
 package com.example.XYZ.homeserviceadmin;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -54,6 +56,8 @@ public class sending extends AppCompatActivity {
         recyclerView.setDrawingCacheEnabled(true);
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         recyclerView.setItemViewCacheSize(20);
+        recyclerView.addItemDecoration(new DividerItemDecoration(sending.this, LinearLayout.VERTICAL));
+       // recyclerView.setItemAnimator(new SlideInUpAnimator());
         /*recyclerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

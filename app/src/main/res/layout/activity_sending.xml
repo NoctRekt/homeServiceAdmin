@@ -21,17 +21,17 @@
         tools:ignore="Deprecated" />
 
 
-
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_alignStart="@+id/etemail"
         android:layout_below="@+id/etemail"
+        android:layout_alignStart="@+id/etemail"
         android:layout_marginTop="25dp"
-        android:text="Select Techinicain" />
+        android:text="Select Techinicain"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
     <!--<RadioGroup
@@ -70,12 +70,14 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="match_parent"
         android:layout_alignTop="@+id/textView3"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="47dp"
         android:nestedScrollingEnabled="true"
         android:onClick="onClick()"
-        tools:ignore="OnClick">
+        tools:ignore="OnClick"
+
+        >
 
     </android.support.v7.widget.RecyclerView>
 
